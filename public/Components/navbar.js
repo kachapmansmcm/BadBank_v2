@@ -97,6 +97,11 @@ function NavBar(props) {
             id="navbarNav"
           >
             <ul className="navbar-nav">
+            <li className="nav-item">
+              <a className="nav-link">
+                { `Welcome, ${props.user.name}  ` }
+              </a>
+              </li>
               <li className="nav-item">
                 <a
                   className={isActiveHome}
