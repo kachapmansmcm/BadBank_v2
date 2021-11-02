@@ -25,7 +25,7 @@ app.use(errorHandler);
 
 async function mySeeder() {
   const data = await User.findOne({"username": "admin"}).exec();
-  if (data.length !== 0) {
+  if (data != null) {
       // Data exists, no need to seed.
       return;
   }
