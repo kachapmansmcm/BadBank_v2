@@ -7,7 +7,5 @@ router.route("/register").post(register);
 
 router.route("/login").post(login);
 
-router.route("/resetpassword/:resetToken").put(resetpassword);
-
 router.route("/getUserInfo").get( getUserInfo );
 module.exports = router;

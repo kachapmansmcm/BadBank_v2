@@ -4,7 +4,6 @@ const { getPrivateData, update, getAll, deleteUser } = require('../controllers/p
 const { protect } = require('../middleware/auth');
 
 
-router.route("/").get(protect, getPrivateData);
 router.route('/update').put(protect, update);
 router.route('/getAll').get(protect, getAll);
 router.route('/deleteUser').delete(protect, deleteUser);
